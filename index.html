@@ -4,7 +4,7 @@
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-                <title>看好料</title>
+                <title>好料智选</title>
                 <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
                 <style>
                     * {
@@ -95,7 +95,7 @@
 
                     // 初始化微信 JS-SDK 并屏蔽分享功能
                     function initWxJsSdk() {
-                        fetch(`https://api.drykfs.cn/api/wechat/getJsapiTicket`, {
+                        fetch(`https://api.aaaia.cn/api/wechat/getJsapiTicket`, {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json",
@@ -154,7 +154,7 @@
 
                     // 5. 加载 iframe 地址并初始化
                     function loadIframe() {
-                        fetch(`https://api.drykfs.cn/api/OAuthLogin/getWechatConfig`)
+                        fetch(`https://api.aaaia.cn/api/OAuthLogin/getWechatConfig`)
                         .then((response) => {
                             if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                             return response.json();
