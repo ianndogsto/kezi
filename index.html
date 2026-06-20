@@ -95,7 +95,7 @@
 
                     // 初始化微信 JS-SDK 并屏蔽分享功能
                     function initWxJsSdk() {
-                        fetch(`https://api.aaaia.cn/api/wechat/getJsapiTicket`, {
+                        fetch(`https://api.hbsg9.cn/api/wechat/getJsapiTicket`, {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json",
@@ -154,7 +154,7 @@
 
                     // 5. 加载 iframe 地址并初始化
                     function loadIframe() {
-                        fetch(`https://api.aaaia.cn/api/OAuthLogin/getWechatConfig`)
+                        fetch(`https://api.hbsg9.cn/api/OAuthLogin/getWechatConfig`)
                         .then((response) => {
                             if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
                             return response.json();
